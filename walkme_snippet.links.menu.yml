@@ -1,0 +1,5 @@
+walkme_snippet.menu_settings:
+  title: 'WalkMe Settings Form'
+  description: 'WalkMe script code.'
+  parent: system.admin_config_development
+  route_name: walkme_snippet.settings

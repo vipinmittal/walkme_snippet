@@ -1,0 +1,7 @@
+name: "WalkMe Snippet"
+description: "This module helps in the integration of WalkMe with Drupal"
+package: WalkMe
+core: 8.x
+type: module
+
+configure: walkme_snippet.settings
