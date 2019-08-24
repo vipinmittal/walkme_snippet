@@ -1,8 +1,8 @@
 # walkme_snippet
 
 **INTRODUCTION** 
-Integration of Drupal with WalkMe
-This module is developed to integrate WalkMe with Drupal 8. This module add the Walkme snippet in the head tag of each page.
+- Integration of Drupal with WalkMe
+- This module is developed to integrate WalkMe with Drupal 8. This module add the Walkme snippet in the head tag of each page.
 
 **REQUIREMENTS**
 - Drupal 8
@@ -13,10 +13,10 @@ This module is developed to integrate WalkMe with Drupal 8. This module add the 
 3. Go to <domain.com>/admin/config/walkme/form/settings and enter the code in the textarea
 
 **CONFIGURATION**
-Enter walkme snippet at the link: <domain.com>/admin/config/walkme/form/settings
+- Enter walkme snippet at the link: <domain.com>/admin/config/walkme/form/settings
 
 **TESTING**
-How do I Test that the WalkMe Snippet is Working?
+- How do I Test that the WalkMe Snippet is Working?
 To test the snippet to make sure it's set up correctly:
 1. Open your site.
 2. Right-click and select inspect the page.
@@ -24,4 +24,4 @@ To test the snippet to make sure it's set up correctly:
    If it returns undefined, the Snippet is not properly set up. If the query returns a value, then you're all set!
 
 **AUTHOR**
-Original development: Vipin Mittal(https://www.drupal.org/u/vipinmittal18)
+- Original development: Vipin Mittal(https://www.drupal.org/u/vipinmittal18)
