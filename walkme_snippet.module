@@ -10,26 +10,25 @@ use Drupal\Core\Render\Markup;
 /**
  * Implements hook_page_attachments().
  */
-function walkme_snippet_page_attachments(array &$page) {
+function walkme_snippet_page_attachments(array &$page)
+{
   // check the snippet visibity on admin pages
   if (\Drupal::config('walkme_snippet.settings')->get('walkme_admin') && \Drupal::service('router.admin_context')->isAdminRoute()) {
     return;
   }
 
   try {
-    $walkmeScript = \Drupal::config('walkme_snippet.settings')->get('walkme_script');  
-    if($walkmeScript){
-        $page['#attached']['html_head'][] = array(
-          array(
-            '#tag' => 'script',
-            '#value' => Markup::create($walkmeScript),
-          ),
-          'key'
-        );
+    $walkmeScript = \Drupal::config('walkme_snippet.settings')->get('walkme_script');
+    if ($walkmeScript) {
+      $page['#attached']['html_head'][] = array(
+        array(
+          '#tag' => 'script',
+          '#value' => Markup::create($walkmeScript),
+        ),
+        'key'
+      );
     }
-  }
-  catch (\Exception $e) {
+  } catch (\Exception $e) {
     return FALSE;
   }
-
 }
