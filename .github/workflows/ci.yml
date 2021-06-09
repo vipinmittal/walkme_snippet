@@ -26,7 +26,7 @@ jobs:
         php-version: ${{ matrix.php_version }}
 
     - name: Install dependencies
-      run: composer install --dev
+      run: composer install
 
     - name: Composer version
       run: composer -V
