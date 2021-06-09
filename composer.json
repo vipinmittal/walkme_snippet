@@ -1,0 +1,19 @@
+{
+    "name": "drupal/walkme_snippet",
+    "description": "This module helps in the integration of WalkMe with Drupal.",
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/walkme_snippet",
+    "authors": [
+        {
+            "name": "Vipin Mittal",
+            "homepage": "https://www.drupal.org/u/vipinmittal18",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/walkme_snippet",
+        "irc": "irc://irc.freenode.org/drupal-contribute",
+        "source": "https://cgit.drupalcode.org/walkme_snippet"
+    },
+    "license": "GPL-2.0-or-later"
+}
