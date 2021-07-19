@@ -17,7 +17,7 @@ function walkme_snippet_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.walkme_snippet':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('This module provides a way to configure the walkme.') . '</p>';
+      $output .= '<p>' . t('This module provides ability to integrate Drupak with Walkme.') . '</p>';
       return $output;
 
     default:
