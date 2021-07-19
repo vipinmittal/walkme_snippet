@@ -4,6 +4,6 @@ walkme_snippet.settings:
     _form: '\Drupal\walkme_snippet\Form\SettingsForm'
     _title: 'WalkMe Settings Form'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'Access Walkme Settings'
   options:
     _admin_route: TRUE

@@ -2,6 +2,12 @@ name: "WalkMe Snippet"
 description: "This module helps in the integration of WalkMe with Drupal"
 package: WalkMe
 core: 8.x
+core_version_requirement: ^8 || ^9
 type: module
 
 configure: walkme_snippet.settings
+
+# Information added by Drupal.org packaging script on 2020-03-07
+version: '8.x-1.0'
+project: 'walkme_snippet'
+datestamp: 1583575331

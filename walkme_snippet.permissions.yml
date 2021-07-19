@@ -1,0 +1,4 @@
+Access Walkme Settings:
+  title: 'Access Walkme Settings'
+  description: 'Allow access to configure the walkme snippet.'
+  restrict access: TRUE

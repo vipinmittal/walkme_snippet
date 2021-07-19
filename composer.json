@@ -12,7 +12,6 @@
     ],
     "support": {
         "issues": "https://www.drupal.org/project/issues/walkme_snippet",
-        "irc": "irc://irc.freenode.org/drupal-contribute",
         "source": "https://cgit.drupalcode.org/walkme_snippet"
     },
     "license": "GPL-2.0-or-later"
