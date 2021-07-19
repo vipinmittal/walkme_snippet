@@ -6,6 +6,24 @@
  */
 
 use Drupal\Core\Render\Markup;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function walkme_snippet_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the walkme_snippet module.
+    case 'help.page.walkme_snippet':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module provides a way to configure the walkme.') . '</p>';
+      return $output;
+
+    default:
+  }
+
+}
 
 /**
  * Implements hook_page_attachments().
@@ -16,20 +34,15 @@ function walkme_snippet_page_attachments(array &$page) {
     return;
   }
 
-  try {
-    $walkmeScript = \Drupal::config('walkme_snippet.settings')->get('walkme_script');
-    if ($walkmeScript) {
-      $page['#attached']['html_head'][] = [
-        [
-          '#tag' => 'script',
-          '#value' => Markup::create($walkmeScript),
-        ],
-        'key',
-      ];
-    }
-  }
-  catch (\Exception $e) {
-    return FALSE;
+  $walkmeScript = \Drupal::config('walkme_snippet.settings')->get('walkme_script');
+  if ($walkmeScript) {
+    $page['#attached']['html_head'][] = [
+      [
+        '#tag' => 'script',
+        '#value' => Markup::create($walkmeScript),
+      ],
+      'walkme_snippet',
+    ];
   }
 
 }
