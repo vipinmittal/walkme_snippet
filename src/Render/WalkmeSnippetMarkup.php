@@ -6,8 +6,7 @@ use Drupal\Component\Render\MarkupInterface;
 use Drupal\Component\Render\MarkupTrait;
 
 /**
- * Defines an object that passes safe strings through the walkme snippet render
- * system.
+ * Defines an object that passes safe strings through walkme render system.
  *
  * This object should only be constructed with a known safe string. If there is
  * any risk that the string contains user-entered data that has not been
